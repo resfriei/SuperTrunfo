@@ -96,7 +96,7 @@ int main(){
 
 //Exibindo as informações das cartas 1 e 2
 
-//Carta 1
+//Carta 01
     printf("Carta 1: \n");
     printf("Estado: %s\n", estado1);
     printf("Código: %s\n", codigo1);
@@ -108,7 +108,7 @@ int main(){
     printf("A densidade populacional é: %.9f\n", densidadepopulacional1);
     printf("O PIB per capita é: %.9f\n", PIBpercapita1);
 
-//Carta 2
+//Carta 02
     printf("Carta 2: \n");
     printf("Estado: %s\n", estado2);
     printf("Código: %s\n", codigo2);
