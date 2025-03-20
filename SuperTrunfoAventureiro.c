@@ -17,6 +17,7 @@ int main(){
     int pontos1;
     float densidadepopulacional1;
     float PIBpercapita1;
+    float Super_Poder1;
 
 //Carta número 2
 
@@ -29,6 +30,7 @@ int main(){
     int pontos2;
     float densidadepopulacional2;
     float PIBpercapita2;
+    float Super_Poder2;
 
 
 //Coleta de dados da carta número 1
@@ -83,6 +85,7 @@ int main(){
     scanf("%d", &pontos2);
 
     printf("\n");
+
 //Calculo da densidade populacional das cartas 1 e 2
 
     densidadepopulacional1 = (float) (população1 / area1);
@@ -94,6 +97,11 @@ int main(){
     PIBpercapita1 = (float) (pib1 / população1);
     PIBpercapita2 = (float) (pib2 / população2);
 
+//Calculo de Super Poder das cartas 1 e 2
+
+    Super_Poder1 = (float) população1 + area1 + pib1 + pontos1 + PIBpercapita1 + (1/densidadepopulacional1);
+    Super_Poder2 = (float) população2 + area2 + pib2 + pontos2 + PIBpercapita2 + (1/densidadepopulacional2);
+
 
 //Exibindo as informações das cartas 1 e 2
 
@@ -104,10 +112,11 @@ int main(){
     printf("Nome da cidade: %s\n", cidade1);
     printf("População: %lu\n", população1);
     printf("Área: %.9f km²\n", area1);
-    printf("PIB: %.9f bilhões de reais\n", pib1);
+    printf("PIB: R$ %.9f bilhões de reais\n", pib1);
     printf("Número de Pontos Turísticos: %d\n", pontos1);
     printf("A densidade populacional é: %.9f\n", densidadepopulacional1);
     printf("O PIB per capita é: %.9f\n", PIBpercapita1);
+    printf("O super poder da carta 1 é de: %f\n", Super_Poder1);
     printf("\n");
 
 //Carta 02
@@ -117,10 +126,11 @@ int main(){
     printf("Nome da cidade: %s\n", cidade2);
     printf("População: %lu\n", população2);
     printf("Área: %.9f km²\n", area2);
-    printf("PIB: %.9f bilhões de reais\n", pib2);
+    printf("PIB: R$ %.9f bilhões de reais\n", pib2);
     printf("Número de Pontos Turísticos: %d\n", pontos2);
     printf("A densidade populacional é: %.9f\n", densidadepopulacional2);
     printf("O PIB per capita é: %.9f\n", PIBpercapita2);
+    printf("O super poder da carta 2 é de: %f", Super_Poder2);
 
 
     return 0;
