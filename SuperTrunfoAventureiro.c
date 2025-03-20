@@ -115,8 +115,7 @@ int main(){
     printf("Número de Pontos Turísticos: %d\n", pontos1);
     printf("A densidade populacional é: %.9f\n", densidadepopulacional1);
     printf("O PIB per capita é: %.9f\n", PIBpercapita1);
-    printf("O super poder da carta 1 é de: %.1f\n", Super_Poder1);
-    printf("\n");
+    printf("O super poder da carta 1 é de: %.1f\n\n", Super_Poder1);
 
 //Carta 02
 
