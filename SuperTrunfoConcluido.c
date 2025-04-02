@@ -130,7 +130,7 @@ int carta1Vence = atributo1 > atributo2;
 
 // Exibindo os resultados da comparação
 
-    printf("* Comparação de Cartas (Atributo: %s) * :\n\n", atributoNome);
+    printf("** Comparação de Cartas (Atributo: %s) ** :\n\n", atributoNome);
     printf("Carta 01 - %s (%s): %.1f\n", cidade1, estado1, atributo1);
     printf("Carta 02 - %s (%s): %.1f\n\n", cidade2, estado2, atributo2);
 
