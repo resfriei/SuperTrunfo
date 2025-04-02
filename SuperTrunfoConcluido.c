@@ -15,7 +15,6 @@ int main(){
     int pontos1;
     float densidadepopulacional1;
     float PIBpercapita1;
-    float Super_Poder1;
 
 //Carta número 2
 
@@ -27,8 +26,6 @@ int main(){
     int pontos2;
     float densidadepopulacional2;
     float PIBpercapita2;
-    float Super_Poder2;
-
 
 //Coleta de dados da carta número 1
 
@@ -95,11 +92,6 @@ int main(){
     PIBpercapita1 = (float) (pib1 / populacao1);
     PIBpercapita2 = (float) (pib2 / populacao2);
 
-//Calculo de Super Poder das cartas 1 e 2
-
-    Super_Poder1 = (float) populacao1 + area1 + pib1 + pontos1 + PIBpercapita1 + (1/densidadepopulacional1);
-    Super_Poder2 = (float) populacao2 + area2 + pib2 + pontos2 + PIBpercapita2 + (1/densidadepopulacional2);
-
 
 //Exibindo as informações das cartas 1 e 2
 
@@ -115,7 +107,6 @@ int main(){
     printf("Número de Pontos Turísticos: %d\n", pontos1);
     printf("A densidade populacional é: %.9f\n", densidadepopulacional1);
     printf("O PIB per capita é: %.9f\n", PIBpercapita1);
-    printf("O super poder da carta 1 é de: %.1f\n\n", Super_Poder1);
 
 //Carta 02
 
@@ -128,20 +119,29 @@ int main(){
     printf("PIB: %.9f bilhões de reais\n", pib2);
     printf("Número de Pontos Turísticos: %d\n", pontos2);
     printf("A densidade populacional é: %.9f\n", densidadepopulacional2);
-    printf("O PIB per capita é: %.9f\n", PIBpercapita2);
-    printf("O super poder da carta 2 é de: %.1f\n\n", Super_Poder2);
+    printf("O PIB per capita é: %.9f\n\n", PIBpercapita2);
 
-//RESULTADO DO DUELO DAS CARTAS
+// Escolha do atributo para comparação
 
-    printf("*DUELANDO, A MELHOR CARTA VENCE: *\n\n");
-    printf ("População...............:  Carta 1 venceu?  ( %d )\n", populacao1 > populacao2);
-    printf ("Area....................:  Carta 1 venceu?  ( %d )\n", area1 > area2);
-    printf ("PIB.....................:  Carta 1 venceu?  ( %d )\n", pib1 > pib2);
-    printf ("Pontos Turisticos.......:  Carta 1 venceu?  ( %d )\n", pontos1 > pontos2);
-    printf ("Densidade Populacional..:  Carta 1 venceu?  ( %d )\n", densidadepopulacional1 < densidadepopulacional2);
-    printf ("PIB per Capita..........:  Carta 1 venceu?  ( %d )\n", PIBpercapita1 > PIBpercapita2);
-    printf ("Super Poder.............:  Carta 1 venceu?  ( %d )\n", Super_Poder1 > Super_Poder2);
-   
-   
+float atributo1 = pib1;
+float atributo2 = pib2;
+char atributoNome[] = "PIB";
+int carta1Vence = atributo1 > atributo2;
+
+// Exibindo os resultados da comparação
+
+    printf("* Comparação de Cartas (Atributo: %s) * :\n\n", atributoNome);
+    printf("Carta 01 - %s (%s): %.1f\n", cidade1, estado1, atributo1);
+    printf("Carta 02 - %s (%s): %.1f\n\n", cidade2, estado2, atributo2);
+
+if (carta1Vence) {
+    printf("## Resultado: Carta 01 (%s) venceu! ##\n", cidade1);
+} else if (atributo1 < atributo2) {
+    printf("## Resultado: Carta 02 (%s) venceu! ##\n", cidade2);
+} else {
+    printf("## Resultado: Empate! ##\n");
+}
+
     return 0;
+
 }
