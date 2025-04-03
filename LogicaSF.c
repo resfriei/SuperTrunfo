@@ -91,8 +91,8 @@ int main(){
 
 //Calculo do PIB per capita das cartas 1 e 2
 
-    PIBpercapita1 = pib1 / populacao1;
-    PIBpercapita2 = pib2 / populacao2;
+    PIBpercapita1 = (float) pib1 / populacao1;
+    PIBpercapita2 = (float) pib2 / populacao2;
 
 
 //Exibindo as informações das cartas 1 e 2
@@ -108,7 +108,7 @@ int main(){
     printf("PIB: %.2f bilhões de reais\n", pib1);
     printf("Número de Pontos Turísticos: %d\n", pontos1);
     printf("A densidade populacional é: %.2f\n", densidadepopulacional1);
-    printf("O PIB per capita é: %.2f\n\n", PIBpercapita1);
+    printf("O PIB per capita é: %.9f\n\n", PIBpercapita1);
 
 //Carta 02
 
@@ -121,7 +121,7 @@ int main(){
     printf("PIB: %.2f bilhões de reais\n", pib2);
     printf("Número de Pontos Turísticos: %d\n", pontos2);
     printf("A densidade populacional é: %.2f\n", densidadepopulacional2);
-    printf("O PIB per capita é: %.2f\n\n", PIBpercapita2);
+    printf("O PIB per capita é: %.9f\n\n", PIBpercapita2);
 
 //Menu switch interativo
 
