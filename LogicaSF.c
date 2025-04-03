@@ -8,26 +8,26 @@ int main(){
 //Carta número 1
 
     char estado1 [25];
-    char codigo1 [3];
+    char codigo1 [25];
     char cidade1 [25];
     unsigned long int populacao1;
     float area1;
     float pib1;
+    int pontos1;
     float densidadepopulacional1;
     float PIBpercapita1;
-    int pontos1;
 
 //Carta número 2
 
     char estado2 [25];
-    char codigo2 [3];
+    char codigo2 [25];
     char cidade2 [25];
     unsigned long int populacao2;
     float area2;
     float pib2;
+    int pontos2;
     float densidadepopulacional2;
     float PIBpercapita2;
-    int pontos2;
 
 //Coleta de dados da carta número 1
 
