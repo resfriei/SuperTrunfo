@@ -91,8 +91,8 @@ int main(){
 
 //Calculo do PIB per capita das cartas 1 e 2
 
-    PIBpercapita1 = (float) pib1 / populacao1;
-    PIBpercapita2 = (float) pib2 / populacao2;
+    PIBpercapita1 = pib1 / populacao1;
+    PIBpercapita2 = pib2 / populacao2;
 
 
 //Exibindo as informações das cartas 1 e 2
