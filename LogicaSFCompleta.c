@@ -217,7 +217,7 @@ int main(){
 
         case 5:
         printf("Você escolheu o atributo densidade.\n");
-        printf("Densidade populacional de %s: %.2f hab/km² vs Densidade populacional de %s: %.2f hab/km²\n", cidade1, densidadepopulacional1, cidade2, densidadepopulacional2);
+        printf("Densidade populacional de %s: %.2f hab/km² vs Densiidade populacional de %s: %.2f hab/km²\n", cidade1, densidadepopulacional1, cidade2, densidadepopulacional2);
         resultado2 = densidadepopulacional1 < densidadepopulacional2 ? 1 : 0;
         break;
 
