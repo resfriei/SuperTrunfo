@@ -1,36 +1,34 @@
 #include <stdio.h>
+#include <string.h>
 
-int main(){
+int main() {
     printf("JOGOS DE CARTA SUPER TRUNFO \n\n");
 
-//Declarações das variáveis
-
-//Carta número 1
-
-    char estado1 [25], codigo1 [5], cidade1 [25];
+    //Declarações das variáveis
+    char estado1[25], codigo1[5], cidade1[25];
     unsigned long int populacao1;
     float area1, pib1, densidadepopulacional1, PIBpercapita1;
     int pontos1;
 
-//Carta número 2
-
-    char estado2 [25], codigo2 [5], cidade2 [25];
+    char estado2[25], codigo2[5], cidade2[25];
     unsigned long int populacao2;
     float area2, pib2, densidadepopulacional2, PIBpercapita2;
     int pontos2;
 
-//Coleta de dados da carta número 1
-
+    //Coleta de dados da carta número 1
     printf("** Dados da carta número 1 **\n");
 
     printf("Digite o estado: \n");
-    scanf("%s", estado1);
+    fgets(estado1, sizeof(estado1), stdin);
+    estado1[strcspn(estado1, "\n")] = '\0';
 
     printf("Digite o código da carta (ex: BA): \n");
     scanf("%s", codigo1);
 
     printf("Digite o nome da cidade: \n");
-    scanf("%s", cidade1);
+    while (getchar() != '\n');
+    fgets(cidade1, sizeof(cidade1), stdin);
+    cidade1[strcspn(cidade1, "\n")] = '\0';
 
     printf("Digite a população: \n");
     scanf("%lu", &populacao1);
@@ -46,18 +44,20 @@ int main(){
 
     printf("A primeira carta foi cadastrada com sucesso!\n\n");
 
-//Coleta de dados da carta número 2
-
+    //Coleta de dados da carta número 2
     printf("** Dados da carta número 2 **\n");
 
     printf("Digite o estado: \n");
-    scanf("%s", estado2);
+    fgets(estado2, sizeof(estado2), stdin);
+    estado2[strcspn(estado2, "\n")] = '\0';
 
     printf("Digite o código da carta (ex: RJ): \n");
     scanf("%s", codigo2);
 
     printf("Digite o nome da cidade: \n");
-    scanf("%s", cidade2);
+    while (getchar() != '\n');
+    fgets(cidade2, sizeof(cidade2), stdin);
+    cidade2[strcspn(cidade2, "\n")] = '\0';
 
     printf("Digite a população: \n");
     scanf("%lu", &populacao2);
@@ -161,7 +161,7 @@ int main(){
             break;
     }
 
-        printf("* Escolha mais um atributo: \n");
+        printf("\n* Escolha mais um atributo *\n");
         printf("1. População\n");
         printf("2. Área\n");
         printf("3. PIB\n");
