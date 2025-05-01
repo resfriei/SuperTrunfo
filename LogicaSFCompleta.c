@@ -25,8 +25,9 @@ int main() {
     printf("Digite o código da carta (ex: BA): \n");
     scanf("%s", codigo1);
 
+    getchar();
+
     printf("Digite o nome da cidade: \n");
-    while (getchar() != '\n');
     fgets(cidade1, sizeof(cidade1), stdin);
     cidade1[strcspn(cidade1, "\n")] = '\0';
 
@@ -48,14 +49,16 @@ int main() {
     printf("** Dados da carta número 2 **\n");
 
     printf("Digite o estado: \n");
+    getchar();
     fgets(estado2, sizeof(estado2), stdin);
     estado2[strcspn(estado2, "\n")] = '\0';
 
     printf("Digite o código da carta (ex: RJ): \n");
     scanf("%s", codigo2);
 
+    getchar();
+
     printf("Digite o nome da cidade: \n");
-    while (getchar() != '\n');
     fgets(cidade2, sizeof(cidade2), stdin);
     cidade2[strcspn(cidade2, "\n")] = '\0';
 
@@ -177,7 +180,7 @@ int main() {
         switch (opcao2) {
         
         case 1:
-        printf("Você escolheu o atributo população.\n");
+        printf("Você escolheu o atributo população.\n\n");
         printf("População de %s: %lu vs População de %s: %lu\n", cidade1, populacao1, cidade2, populacao2);
         resultado2 = populacao1 > populacao2 ? 1 : 0;
         break;
