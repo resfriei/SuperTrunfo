@@ -73,17 +73,12 @@ int main(){
     
     printf("A segunda carta foi cadastrada com sucesso!\n\n");
 
-//Calculo da densidade populacional das cartas 1 e 2
+//Calculos de densidade e PIBpercapita
 
     densidadepopulacional1 = (float) populacao1 / area1;
-
     densidadepopulacional2 = (float) populacao2 / area2;
-
-//Calculo do PIB per capita das cartas 1 e 2
-
     PIBpercapita1 = (float) pib1 / populacao1;
     PIBpercapita2 = (float) pib2 / populacao2;
-
 
 //Exibindo as informações das cartas 1 e 2
 
