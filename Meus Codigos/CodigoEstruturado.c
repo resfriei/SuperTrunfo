@@ -60,6 +60,7 @@ void compararCartas(Carta c1, Carta c2, int atributo) {
             printf("Atributo: Densidade Demografica\n");
             valor1 = c1.densidade_demografica;
             valor2 = c2.densidade_demografica;
+            
             // Inverter regra: menor valor vence
             if (valor1 < valor2) {
                 printf("%s vence!\n", c1.nome);
